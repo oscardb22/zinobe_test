@@ -85,4 +85,7 @@ class TestZinobe:
         self.get_data_frame().to_sql(name='data', con=con, if_exists="replace")
 
 
-TestZinobe().save_sqlite()
+test_zinobe = TestZinobe()
+test_zinobe.get_data_time()
+test_zinobe.save_json_file()
+test_zinobe.save_sqlite()
